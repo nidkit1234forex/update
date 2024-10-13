@@ -23,4 +23,4 @@ with open("set-miner-off/offline.json", "r", encoding='utf8') as file:
     print("CPU      =",cpu)
 NAME=name
 CPU=cpu
-os.system(f"cd ccminer && ./ccminer -a verus -o {POOL} -u {WALLET}.{NAME} -p {PASSWORD} -t {CPU}")
+os.system(f"cd CCminer-ARM-optimized && ./ccminer -a verus -o {POOL} -u {WALLET}.{NAME} -p {PASSWORD} -t {CPU}")
