@@ -9,6 +9,9 @@ git clone https://github.com/uncharted9898/CCminer-ARM-optimized.git
 cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
 
 mv CCminer-ARM-optimized ccminer 
+
+mkdir CCminer-ARM-optimized
+
 cd ccminer 
 
 chmod +x build.sh
