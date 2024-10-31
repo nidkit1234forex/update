@@ -10,6 +10,6 @@ killall com.termux
 done
 
 echo "online"
-sleep 60s
+sleep 300s
 ./net.sh
 
